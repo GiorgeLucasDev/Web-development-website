@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+:root{
+    --theme-color1:#168224;
+    --theme-color2: #2f9e40;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    height: 80px;
+    align-items: center;
+    padding: 0px 50px;
+    box-shadow: 2px 2px 5px 2px #83838385;
+    position: sticky;   
+    top: 0; 
+    z-index: 999;
+}
+
+.right,.left{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+}
+
+.left img{
+    height: 100%;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    padding: 0px 10px;
+    
+}
+
+nav li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+    color: var(--theme-color2);
+}
+
+/* MAIN */
+
+main {
+    padding-bottom: 50px;
+}
+
+main p{
+    font-size: 16px;
+    padding: 0px 10px;
+}
+
+/* HTML.html page */
+
+.htmlSection{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 150px;
+    background: linear-gradient(42deg, #df4903, #ff8a3c);
+}
+
+
+.htmlRight{
+    display: flex;
+}
+
+.htmlRight img{
+    width: 300px;
+    height: 300px;
+}
+
+.htmlLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.htmlLeft h1{
+    font-size: 38px;
+    padding: 10px 0px;
+    color: #f2ffed;
+}
+
+.htmlLeft p{
+    text-align: center;
+    max-width: 70%;
+    color: #f9f9f9;
+    font-size: 18px;
+}
+
+#imgCode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.htmlFooter{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: linear-gradient(42deg, #df4903, #ff8a3c);
+}
+
+/* ---------------------- */
+
+
+/* css.html page */
+
+.cssSection{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 150px;
+    background: linear-gradient(90deg, #1572B6 60%, #33A9DC);
+}
+
+
+.cssRight{
+    display: flex;
+}
+
+.cssRight img{
+    width: 300px;
+    height: 300px;
+}
+
+.cssLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cssLeft h1{
+    font-size: 38px;
+    padding: 10px 0px;
+    color: #f2ffed;
+}
+
+.cssLeft p{
+    text-align: center;
+    max-width: 70%;
+    color: #f9f9f9;
+    font-size: 18px;
+}
+
+#imgCode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cssFooter{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: linear-gradient(90deg, #1572B6 60%, #33A9DC);
+}
+
+/* ---------------------- */
+
+/* javaScript.html page */
+
+.jsSection{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 150px;
+    background: linear-gradient(45deg, #f0db4f, #fdea69);
+}
+
+
+.jsRight{
+    display: flex;
+}
+
+.jsRight img{
+    width: 300px;
+    height: 300px;
+}
+
+.jsLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #464646;
+}
+
+.jsLeft h1{
+    font-size: 38px;
+    padding: 10px 0px;
+}
+
+.jsLeft p{
+    text-align: center;
+    max-width: 70%;
+    font-size: 18px;
+}
+
+#imgCode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jsFooter{
+    display: flex;
+    flex-direction: column;
+    color: #464646;
+    background: linear-gradient(45deg, #f0db4f, #fdea69);
+    
+}
+
+/* ---------------------- */
+
+
+
+.aboutSection{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 150px;
+    background: linear-gradient(42deg, #168224, #34cbb6);
+}
+
+.aboutRight{
+    display: flex;
+}
+
+.aboutRight img{
+    width: 400px;
+    height: 300px;
+}
+
+.aboutLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.aboutLeft h1{
+    font-size: 38px;
+    padding: 10px 0px;
+    color: #f2ffed;
+}
+
+.aboutLeft p{
+    text-align: center;
+    max-width: 70%;
+    color: #f9f9f9;
+    font-size: 18px;
+}
+
+
+.section {
+    padding: 30px 180px;
+    color: #303030;
+}
+
+.section h1{
+    font-size: 30px;
+    color: var(--theme-color1);
+}
+
+.section h2{
+    color: var(--theme-color1);
+    text-decoration: underline;
+    text-decoration-color: #ff3e44;
+    padding: 0px 0px 0px 30px;
+}
+
+.section p{
+    padding: 10px 10px 10px 30px;
+}
+
+.section ul {
+    list-style-position: inside;
+    padding: 0px 0px 0px 60px;
+    margin: 10px 0px;
+}
+
+.section ul a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.section li{
+    margin: 15px 0;
+    padding: 5px 0;
+}
+
+
+hr{
+    width: 70%;
+    margin: 0px auto;
+    border: 1px solid #ff8282;
+}
+
+.icon{
+    color: #ff3e44;
+    margin-right: 5px;
+}
+
+.teacherInfo{
+   display: flex;
+   flex-direction: row;
+   background-color: white;
+   width: 100%;
+   padding: 20px;
+   margin: 20px 0px 0px -20px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   gap: 30px;
+   border-radius: 50px;
+   box-shadow: 5px 5px 15px #00000029;
+}
+
+.teacherInfo ul{
+    list-style: none;
+    padding: 10px;
+}
+
+
+#profileImage{
+    border-radius: 50%;
+    width: 260px;
+    border: 5px solid #168224;
+}
+
+#profileName{
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+}
+
+.teacherData li{
+    font-size: 18px;
+    color: var(--theme-color1);
+
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+   
+}
+
+.github {
+    background-color: #333;
+}
+
+.github:hover {
+    background-color: #000;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.linkedin:hover {
+    background-color: #046293;
+}
+
+.instagram{
+    background-color: #E4405F;
+}
+
+.instagram:hover{
+    background-color: #ED616F;
+}
+
+.facebook{
+    background-color: #3B5998;
+}
+
+.facebook:hover{
+    background-color: #4C70BA;
+}
+
+.social-button i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: linear-gradient(302deg, #3db153 , #218533);
+}
+
+.footerRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footerRow p{
+    padding: 10px 0px;
+}
+
+.footerInfo{
+    padding: 30px 0px 30px 30px;
+    width: 35%;
+}
+
+.footerInfo #campus{
+    font-size: 18px;
+}
+
+.footerInfo p{
+    text-align: justify;
+}
+
+.footerContact{
+    padding: 30px 30px 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerContact p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.footerSocial{
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    gap: 5px;
+    
+}
+
+.circle{
+    border-radius: 50%;
+    width: 15px;
+    height: 35px;
+}
+
+.circle i {
+    margin: 0px;
+}
+
+.revealPull{
+    position: relative;
+    transform: translateX(800px);
+    opacity: 0;
+    transition: all 2s ease; 
+}
+
+.revealPull.activePull{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+
+.reveal{
+    position: relative;
+    opacity: 0;
+    transition: all 2s ease; 
+}
+
+.reveal.active{
+    opacity: 1;
+}
+
+
+  
+
+
+  
