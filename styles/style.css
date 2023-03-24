@@ -75,6 +75,7 @@ nav li a:hover{
     text-decoration: underline;
     color: var(--theme-color1);
     text-decoration-color: var(--theme-color2);
+    text-decoration-thickness: 2px;
 }
 
 /* MAIN */
