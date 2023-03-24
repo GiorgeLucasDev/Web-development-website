@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-
 :root{
     --theme-color1:#168224;
-    --theme-color2: #2f9e40;
+
+    --theme-color2: #ff3e44;
 }
 
 * {
@@ -14,6 +13,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
 }
+
+/* HEADER */
 
 header {
     display: flex;
@@ -29,17 +30,22 @@ header {
     z-index: 999;
 }
 
-.right,.left{
+.headerRight,.headerLeft{
     display: flex;
     flex-direction: row;
     height: 100%;
     align-items: center;
 }
 
-.left img{
+.headerLeft img{
     height: 100%;
 }
 
+.headerLeft a, .headerLeft a:hover{
+    color: black;
+    background-color: none;
+    text-decoration: none;
+}
 
 nav {
     display: flex;
@@ -50,9 +56,10 @@ nav ul{
     list-style: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
-nav ul li{
+nav li{
     padding: 0px 10px;
     
 }
@@ -66,7 +73,8 @@ nav li a{
 
 nav li a:hover{
     text-decoration: underline;
-    color: var(--theme-color2);
+    color: var(--theme-color1);
+    text-decoration-color: var(--theme-color2);
 }
 
 /* MAIN */
@@ -80,198 +88,25 @@ main p{
     padding: 0px 10px;
 }
 
-/* HTML.html page */
-
-.htmlSection{
+.mainSection{
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 20px 150px;
-    background: linear-gradient(42deg, #df4903, #ff8a3c);
+    background: linear-gradient(42deg, var(--theme-color1), #34cbb6);
 }
 
-
-.htmlRight{
+.mainRight{
     display: flex;
 }
 
-.htmlRight img{
-    width: 300px;
-    height: 300px;
-}
-
-.htmlLeft{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.htmlLeft h1{
-    font-size: 38px;
-    padding: 10px 0px;
-    color: #f2ffed;
-}
-
-.htmlLeft p{
-    text-align: center;
-    max-width: 70%;
-    color: #f9f9f9;
-    font-size: 18px;
-}
-
-#imgCode{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.htmlFooter{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    background: linear-gradient(42deg, #df4903, #ff8a3c);
-}
-
-/* ---------------------- */
-
-
-/* css.html page */
-
-.cssSection{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 20px 150px;
-    background: linear-gradient(90deg, #1572B6 60%, #33A9DC);
-}
-
-
-.cssRight{
-    display: flex;
-}
-
-.cssRight img{
-    width: 300px;
-    height: 300px;
-}
-
-.cssLeft{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.cssLeft h1{
-    font-size: 38px;
-    padding: 10px 0px;
-    color: #f2ffed;
-}
-
-.cssLeft p{
-    text-align: center;
-    max-width: 70%;
-    color: #f9f9f9;
-    font-size: 18px;
-}
-
-#imgCode{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cssFooter{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    background: linear-gradient(90deg, #1572B6 60%, #33A9DC);
-}
-
-/* ---------------------- */
-
-/* javaScript.html page */
-
-.jsSection{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 20px 150px;
-    background: linear-gradient(45deg, #f0db4f, #fdea69);
-}
-
-
-.jsRight{
-    display: flex;
-}
-
-.jsRight img{
-    width: 300px;
-    height: 300px;
-}
-
-.jsLeft{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #464646;
-}
-
-.jsLeft h1{
-    font-size: 38px;
-    padding: 10px 0px;
-}
-
-.jsLeft p{
-    text-align: center;
-    max-width: 70%;
-    font-size: 18px;
-}
-
-#imgCode{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.jsFooter{
-    display: flex;
-    flex-direction: column;
-    color: #464646;
-    background: linear-gradient(45deg, #f0db4f, #fdea69);
-    
-}
-
-/* ---------------------- */
-
-
-
-.aboutSection{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 20px 150px;
-    background: linear-gradient(42deg, #168224, #34cbb6);
-}
-
-.aboutRight{
-    display: flex;
-}
-
-.aboutRight img{
+.mainRight img{
     width: 400px;
     height: 300px;
 }
 
-.aboutLeft{
+.mainLeft{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -279,21 +114,24 @@ main p{
     
 }
 
-.aboutLeft h1{
+.mainLeft h1{
     font-size: 38px;
     padding: 10px 0px;
-    color: #f2ffed;
 }
 
-.aboutLeft p{
+.mainLeft p{
     text-align: center;
     max-width: 70%;
-    color: #f9f9f9;
     font-size: 18px;
 }
 
+/* END MAIN */
+
+/* SECTION */
 
 .section {
+    line-height: 2;
+    letter-spacing: 0.5px;
     padding: 30px 180px;
     color: #303030;
 }
@@ -306,7 +144,7 @@ main p{
 .section h2{
     color: var(--theme-color1);
     text-decoration: underline;
-    text-decoration-color: #ff3e44;
+    text-decoration-color: var(--theme-color2);
     padding: 0px 0px 0px 30px;
 }
 
@@ -320,13 +158,12 @@ main p{
     margin: 10px 0px;
 }
 
-.section ul a{
+.section a{
     text-decoration: none;
     font-size: 18px;
 }
 
 .section li{
-    margin: 15px 0;
     padding: 5px 0;
 }
 
@@ -334,12 +171,19 @@ main p{
 hr{
     width: 70%;
     margin: 0px auto;
-    border: 1px solid #ff8282;
+    border: 1px solid var(--theme-color2);
 }
 
 .icon{
-    color: #ff3e44;
+    color: var(--theme-color2);
     margin-right: 5px;
+}
+
+
+#imgExample{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .teacherInfo{
@@ -363,14 +207,14 @@ hr{
 }
 
 
-#profileImage{
+.profileImage{
     border-radius: 50%;
     width: 260px;
-    border: 5px solid #168224;
+    border: 5px solid var(--theme-color1);
 }
 
-#profileName{
-    padding: 0px;
+.profileName{
+    padding: 0px !important;
     margin: 20px 0px 0px 0px;
 }
 
@@ -492,6 +336,7 @@ footer{
     bottom: 10px;
     right: 10px;
     gap: 5px;
+    box-shadow: 5px 5px 15px #00000029;
     
 }
 
@@ -504,6 +349,13 @@ footer{
 .circle i {
     margin: 0px;
 }
+
+.hlt {
+    padding: 0px 5px;
+    color: var(--theme-color1);
+    text-decoration: underline var(--theme-color2) 1.5px;
+}
+
 
 .revealPull{
     position: relative;
@@ -521,11 +373,109 @@ footer{
 .reveal{
     position: relative;
     opacity: 0;
-    transition: all 2s ease; 
+    transition: all 0.8s ease; 
 }
 
 .reveal.active{
     opacity: 1;
+}
+
+/* responsividade */
+
+
+@media (max-width: 850px) {
+    header {
+        flex-direction: column;
+        height: 100%;
+        gap: 40px;
+        position: relative;
+        text-align: center;
+    }
+
+    .headerLeft {
+        flex-direction: column;
+    }
+    .headerRight{
+        padding-bottom: 30px;
+    }
+    
+
+    .mainSection {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+        gap: 30px;
+    }
+    
+    .mainLeft, .mainRight {
+        width: 100%;
+    }
+
+    .mainRight{
+        justify-content: center;
+    }
+    
+    hr {
+        width: 90%;
+    }
+
+    .section{
+        padding: 30px;
+    }
+
+    .teacherInfo{
+        flex-direction: column;
+        padding: 25px 10px;
+        margin: 20px 0px 0px -10px;
+    }
+
+    #imgExample {
+        width: 100%;
+    }
+
+    footer{
+        padding: 30px;
+        text-align: center;
+    }
+
+    .footerRow{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footerInfo{
+        padding: 0px;
+        width: 100%;
+    }
+
+    .footerInfo p{
+        text-align: center;
+    }
+
+    .footerContact {
+        padding: 0px;
+    }
+}
+
+
+@media (max-width: 580px) {
+
+    .mainSection, .section{
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        padding: 10px 0px;
+        text-align: center;
+    }
+
+    .section h2, .section p, .section ul {
+        padding: 0px 0px 0px 10px;
+    }
 }
 
 

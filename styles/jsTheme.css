@@ -1,0 +1,23 @@
+:root {
+    --theme-color1: #464646;
+    --theme-color2: #ffde00;
+}
+
+.mainSection{
+    background: linear-gradient(45deg, #f0db4f, #fdea69);
+}
+
+.mainRight img{
+    width: 300px;
+    height: 300px;
+}
+
+.mainLeft{
+    color: var(--theme-color1);
+}
+
+.mainFooter{
+    color: var(--theme-color1);
+    background: linear-gradient(45deg, #f0db4f, #fdea69);
+    
+}

@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/htmlTheme.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Desenvolvimento Web</title>
 </head>
 <body>
     <header>
-        <div class="left">
+        <div class="headerLeft">
             <img src="img/logo.png" alt="não faço ideia">
-            <h1>Desenvolvimento Web</h1>
+            <a href="index.html">
+                <h1>Desenvolvimento Web</h1>
+            </a>
         </div>
-        <div class="right">
+        <div class="headerRight">
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -26,43 +29,43 @@
         </div>
     </header>
     <main>
-        <section class="htmlSection"> 
-            <div class="htmlLeft revealPull activePull">
+        <section class="mainSection"> 
+            <div class="mainLeft revealPull activePull">
                 <h1>O que é HTML?</h1>
                 <p>HTML é uma linguagem de programação usada para criar páginas da web. Ele permite que os desenvolvedores organizem o conteúdo de uma página, como texto, imagens, links e formulários. Quando você visita um site, o navegador da web usa o HTML para exibir o conteúdo e os elementos da página.</p>
             </div>
-            <div class="htmlRight revealPull activePull">
+            <div class="mainRight revealPull activePull">
                 <img src="img/HTML.png" alt="">
             </div>
             
         </section>
-        <section class="intro section reveal active">
+        <section class="section reveal active">
             <h1><span class="fa fa-hashtag icon"></span>HTML</h1>
-            <p>HTML (Hypertext Markup Language) é a linguagem padrão utilizada para criar páginas web. Com HTML, você pode criar documentos que são interpretados por navegadores web e transformados em conteúdo visual, incluindo texto, imagens, links e vídeos.</p>
+            <p>HTML (<span class="hlt">Hypertext Markup Language</span>) é a linguagem padrão utilizada para criar páginas web. Com HTML, você pode criar documentos que são interpretados por navegadores web e transformados em conteúdo visual, incluindo texto, imagens, links e vídeos.</p>
         </section>
-        <hr class="reveal">
-        <section class="section reveal"> 
+        <hr class="reveal active">
+        <section class="section reveal active"> 
             <h1><span class="fa fa-hashtag icon"></span>Histórico</h1>
-            <p>HTML foi criado em 1990 por Tim Berners-Lee, que também é conhecido como o pai da World Wide Web. A primeira versão da linguagem, HTML 1.0, foi lançada em 1993. Desde então, a linguagem evoluiu e passou por diversas versões, incluindo HTML 2.0, HTML 3.2, HTML 4.0 e HTML 5, que é a versão mais recente e amplamente utilizada atualmente.</p>
+            <p>HTML foi criado em 1990 por <span class="hlt">Tim Berners-Lee</span>, que também é conhecido como o pai da <span class="hlt">World Wide Web</span>. A primeira versão da linguagem, <span class="hlt">HTML 1.0</span>, foi lançada em 1993. Desde então, a linguagem evoluiu e passou por diversas versões, incluindo <span class="hlt">HTML 2.0</span>, <span class="hlt">HTML 3.2</span>, <span class="hlt">HTML 4.0</span> e <span class="hlt">HTML 5</span>, que é a versão mais recente e amplamente utilizada atualmente.</p>
         </section>
         <hr class="reveal">
         <section class="section reveal"> 
             <h1><span class="fa fa-hashtag icon"></span>Sintaxe</h1>
-            <p>A sintaxe básica da linguagem HTML é relativamente simples, e é composta por tags HTML, elementos e atributos. Tags HTML são usadas para criar elementos na página, como títulos, parágrafos, imagens e links. Elementos são os objetos criados pelas tags HTML, enquanto os atributos são usados para especificar informações adicionais sobre esses elementos.</p>
+            <p>A sintaxe básica da linguagem HTML é relativamente simples, e é composta por <span class="hlt">tags HTML</span>, <span class="hlt">elementos</span> e <span class="hlt">atributos</span>. <span class="hlt">Tags HTML</span> são usadas para criar elementos na página, como títulos, parágrafos, imagens e links. <span class="hlt">Elementos</span> são os objetos criados pelas <span class="hlt">tags HTML</span>, enquanto os <span class="hlt">atributos</span> são usados para especificar informações adicionais sobre esses <span class="hlt">elementos</span>.</p>
             <p>Aqui está um exemplo básico de código HTML:</p>
-            <div id="imgCode">
+            <div id="imgExample">
                 <img src="img/htmlCodeExample.png" alt="Exemplo de código html">
             </div>
-            <p>Neste exemplo, estamos criando uma página HTML com um título "Título da página" e um cabeçalho contendo um título "Este é um título" e um parágrafo "Este é um parágrafo". A estrutura básica de uma página HTML inclui as seções head e body, que são usadas para definir informações de cabeçalho e conteúdo da página, respectivamente.</p>
+            <p>Neste exemplo, estamos criando uma página HTML com um <span class="hlt">título</span> "Título da página" e um <span class="hlt">cabeçalho</span> contendo um <span class="hlt">título</span> "Este é um título" e um <span class="hlt">parágrafo</span> "Este é um parágrafo". A estrutura básica de uma <span class="hlt">página HTML</span> inclui as seções <span class="hlt">head</span> e <span class="hlt">body</span>, que são usadas para definir <span class="hlt">informações de cabeçalho</span> e <span class="hlt">conteúdo da página</span>, respectivamente.</p>
         </section>
         <hr class="reveal">
         <section class="section reveal"> 
             <h1><span class="fa fa-hashtag icon"></span>Estrutura</h1>
             <p>Uma página HTML pode incluir diversas seções e elementos, dependendo do seu conteúdo e objetivos. Algumas das seções mais comuns incluem:</p>
             <ul>
-                <li>Cabeçalho (head): Usado para incluir informações de cabeçalho da página, como o título, metadados, scripts e folhas de estilo.</li>
-                <li>Corpo (body): Usado para incluir o conteúdo principal da página, como textos, imagens, tabelas e formulários.</li>
-                <li>Rodapé (footer): Usado para incluir informações adicionais sobre a página, como links de navegação, direitos autorais e informações de contato.</li>
+                <li><span class="hlt">Cabeçalho (head)</span>: Usado para incluir informações de cabeçalho da página, como o título, metadados, scripts e folhas de estilo.</li>
+                <li><span class="hlt">Corpo (body)</span>: Usado para incluir o conteúdo principal da página, como textos, imagens, tabelas e formulários.</li>
+                <li><span class="hlt">Rodapé (footer)</span>: Usado para incluir informações adicionais sobre a página, como links de navegação, direitos autorais e informações de contato.</li>
             </ul>
         </section>
         <hr class="reveal">
@@ -70,16 +73,16 @@
             <h1><span class="fa fa-hashtag icon"></span>Elementos e Atributos</h1>
             <p>HTML inclui uma grande variedade de elementos e atributos que podem ser usados para criar e estilizar conteúdo na página. Alguns dos elementos mais comuns incluem:</p>
             <ul>
-                <li>Títulos (h1 a h6): Usados para criar títulos e subtítulos na página.</li>
-                <li>Parágrafos (p): Usados para criar blocos de texto na página.</li>
-                <li>Imagens (img): Usadas para incluir imagens na página.</li>
-                <li>Links (a): Usados para criar links para outras páginas ou recursos na web.</li>
+                <li><span class="hlt">Títulos (h1 a h6)</span>: Usados para criar títulos e subtítulos na página.</li>
+                <li><span class="hlt">Parágrafos (p)</span>: Usados para criar blocos de texto na página.</li>
+                <li><span class="hlt">Imagens (img)</span>: Usadas para incluir imagens na página.</li>
+                <li><span class="hlt">Links (a)</span>: Usados para criar links para outras páginas ou recursos na web.</li>
             </ul>
             <p>Alguns dos atributos mais comuns incluem:</p>
             <ul>
-                <li>class e id: Usados para identificar e estilizar elementos na página.</li>
-                <li>src: Usado para especificar a localização de recursos, como imagens e scripts.</li>
-                <li>href: Usado para especificar a URL para a qual um link deve apontar.</li>
+                <li><span class="hlt">class e id</span>: Usados para identificar e estilizar elementos na página.</li>
+                <li><span class="hlt">src</span>: Usado para especificar a localização de recursos, como imagens e scripts.</li>
+                <li><span class="hlt">href</span>: Usado para especificar a URL para a qual um link deve apontar.</li>
             </ul>
         </section>
         <hr class="reveal">
@@ -88,7 +91,7 @@
             <p>HTML é uma linguagem essencial para qualquer desenvolvedor web e é a base de todas as páginas web. Com uma compreensão sólida da sintaxe, estrutura, elementos e atributos da linguagem, é possível criar páginas web poderosas e visualmente atraentes.</p>
         </section>
     </main>
-    <footer class="htmlFooter">
+    <footer class="mainFooter">
         <div class="footerRow">
             <div class="footerInfo">
                 <h1>Instituto Federal do Tocantins</h1>

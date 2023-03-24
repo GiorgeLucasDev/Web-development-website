@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cssTheme.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Desenvolvimento Web</title>
 </head>
 <body>
     <header>
-        <div class="left">
+        <div class="headerLeft">
             <img src="img/logo.png" alt="não faço ideia">
-            <h1>Desenvolvimento Web</h1>
+            <a href="index.html">
+                <h1>Desenvolvimento Web</h1>
+            </a>
         </div>
-        <div class="right">
+        <div class="headerRight">
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -26,33 +29,33 @@
         </div>
     </header>
     <main>
-        <section class="cssSection"> 
-            <div class="cssLeft revealPull activePull">
+        <section class="mainSection"> 
+            <div class="mainLeft revealPull activePull">
                 <h1>O que é CSS?</h1>
                 <p>CSS (Cascading Style Sheets) é uma linguagem de estilo usada para estilizar páginas web. Ele é usado em conjunto com HTML e JavaScript para criar páginas web visualmente atraentes e funcionais.</p>
             </div>
-            <div class="cssRight revealPull activePull">
+            <div class="mainRight revealPull activePull">
                 <img src="img/CSS.png" alt="">
             </div>
             
         </section>
-        <section class="intro section reveal active">
+        <section class="section reveal active">
             <h1><span class="fa fa-hashtag icon"></span>CSS</h1>
-            <p>CSS é uma linguagem de estilo que define como as páginas web devem ser apresentadas ao usuário. É usada em conjunto com HTML e JavaScript para criar páginas web com estilos personalizados e layouts responsivos.</p>
+            <p>CSS (<span class="hlt">Cascading Style Sheets</span>) é uma linguagem de estilo que define como as páginas web devem ser apresentadas ao usuário. É usada em conjunto com HTML e JavaScript para criar páginas web com estilos personalizados e <span class="hlt">layouts responsivos</span>.</p>
         </section>
-        <hr class="reveal">
-        <section class="section reveal"> 
+        <hr class="reveal active">
+        <section class="section reveal active"> 
             <h1><span class="fa fa-hashtag icon"></span>Sintaxe</h1>
-            <p>A sintaxe básica de CSS consiste em seletores, propriedades e valores. Um seletor é usado para selecionar um elemento HTML, uma propriedade é usada para definir um estilo para o elemento selecionado e um valor é usado para especificar o valor da propriedade.</p>
-            <div id="imgCode">
+            <p>A sintaxe básica de CSS consiste em <span class="hlt">seletores</span>, <span class="hlt">propriedades</span> e <span class="hlt">valores</span>. Um <span class="hlt">seletor</span> é usado para selecionar um elemento HTML, uma <span class="hlt">propriedade</span> é usada para definir um estilo para o elemento selecionado e um <span class="hlt">valor</span> é usado para especificar o <span class="hlt">valor da propriedade</span>.</p>
+            <div id="imgExample">
                 <img src="img/cssSintax.jpg" alt="Exemplo da sintaxe do css">
             </div>
         </section>
         <hr class="reveal">
         <section class="section reveal"> 
             <h1><span class="fa fa-hashtag icon"></span>Box Model</h1>
-            <p>O box model em CSS é a maneira como os elementos HTML são tratados como caixas retangulares que podem ser dimensionadas, posicionadas e estilizadas. O modelo de caixa consiste em quatro áreas: conteúdo, preenchimento, borda e margem.</p>
-            <div id="imgCode">
+            <p>O <span class="hlt">box model</span> em CSS é a maneira como os elementos HTML são tratados como caixas retangulares que podem ser dimensionadas, posicionadas e estilizadas. O modelo de caixa consiste em quatro áreas: <span class="hlt">conteúdo</span>, <span class="hlt">preenchimento</span>, <span class="hlt">borda</span> e <span class="hlt">margem</span>.</p>
+            <div id="imgExample">
                 <img src="img/box-model.png" alt="Box Model CSS">
             </div>
         </section>
@@ -61,13 +64,13 @@
             <h1><span class="fa fa-hashtag icon"></span>Propriedades de estilo</h1>
             <p>Existem muitas propriedades de estilo diferentes em CSS que podem ser usadas para estilizar elementos HTML. Aqui estão alguns exemplos de propriedades comuns:</p>
             <ul>
-                <li>Cor: color</li>
-                <li>Fonte: font-family, font-size, font-weight</li>
-                <li>Tamanho: width, height</li>
-                <li>Fundo: background-color, background-image</li>
-                <li>Posicionamento: position, top, right, bottom, left</li>
-                <li>Animations: animation, transition</li>
-                <li>Transformações: transform</li>
+                <li><span class="hlt">Cor</span>: color</li>
+                <li><span class="hlt">Fonte</span>: font-family, font-size, font-weight</li>
+                <li><span class="hlt">Tamanho</span>: width, height</li>
+                <li><span class="hlt">Fundo</span>: background-color, background-image</li>
+                <li><span class="hlt">Posicionamento</span>: position, top, right, bottom, left</li>
+                <li><span class="hlt">Animações</span>: animation, transition</li>
+                <li><span class="hlt">Transformações</span>: transform</li>
             </ul>
         </section>
         <hr class="reveal">
@@ -75,40 +78,40 @@
             <h1><span class="fa fa-hashtag icon"></span>Seletores</h1>
             <p>Existem vários tipos diferentes de seletores em CSS que podem ser usados para selecionar elementos HTML. Aqui estão alguns exemplos de seletores comuns:</p>
             <ul>
-                <li>Seletor de elemento: seleciona um tipo de elemento específico, como p, h1 ou img.</li>
-                <li>Seletor de classe: seleciona um ou mais elementos que têm uma classe específica, como .classe.</li>
-                <li>Seletor de ID: seleciona um elemento com um ID específico, como #id.</li>
-                <li>Seletor de atributo: seleciona elementos que têm um atributo específico, como [type="text"].</li>
+                <li><span class="hlt">Seletor de elemento</span>: seleciona um tipo de elemento específico, como p, h1 ou img.</li>
+                <li><span class="hlt">Seletor de classe</span>: seleciona um ou mais elementos que têm uma classe específica, como .classe.</li>
+                <li><span class="hlt">Seletor de ID</span>: seleciona um elemento com um ID específico, como #id.</li>
+                <li><span class="hlt">Seletor de atributo</span>: seleciona elementos que têm um atributo específico, como [type="text"].</li>
             </ul>
         </section>
         <hr class="reveal">
         <section class="section reveal"> 
             <h1><span class="fa fa-hashtag icon"></span>Especificidade</h1>
-            <p>A especificidade em CSS é a maneira como o CSS determina qual estilo deve ser aplicado a um elemento quando existem vários estilos conflitantes. A especificidade é determinada pelo número de seletores e propriedades em um estilo.</p>
+            <p>A <span class="hlt">especificidade</span> em CSS é a maneira como o CSS determina qual estilo deve ser aplicado a um elemento quando existem vários estilos conflitantes. A especificidade é determinada pelo número de seletores e propriedades em um estilo.</p>
             <ul>
-                <li>Seletor de ID: 100 pontos de especificidade</li>
-                <li>Seletor de classe, seletor de atributo e seletor de pseudoclasse: 10 pontos de especificidade</li>
-                <li>Seletor de elemento e seletor de pseudoelemento: 1 ponto de especificidade</li>
+                <li><span class="hlt">Seletor de ID</span>: 100 pontos de especificidade</li>
+                <li><span class="hlt">Seletor de classe</span>, <span class="hlt">seletor de atributo</span> e <span class="hlt">seletor de pseudoclasse</span>: 10 pontos de especificidade</li>
+                <li><span class="hlt">Seletor de elemento</span> e <span class="hlt">seletor de pseudoelemento</span>: 1 ponto de especificidade</li>
             </ul>
         </section>
         <hr class="reveal">
         <section class="section reveal"> 
             <h1><span class="fa fa-hashtag icon"></span>Responsividade</h1>
-            <p>Os layouts responsivos em CSS são layouts que se adaptam a diferentes tamanhos de tela e dispositivos. Existem várias técnicas diferentes que podem ser usadas para criar layouts responsivos em CSS, incluindo:</p>
+            <p>Os <span class="hlt">layouts responsivos</span> em CSS são layouts que se adaptam a diferentes tamanhos de tela e dispositivos. Existem várias técnicas diferentes que podem ser usadas para criar layouts responsivos em CSS, incluindo:</p>
             <ul>
-                <li>Media queries: permitem definir estilos diferentes com base no tamanho da tela ou do dispositivo.</li>
-                <li>Unidades flexíveis: permitem dimensionar elementos com base no tamanho da tela ou do dispositivo.</li>
-                <li>Grid systems: permitem criar layouts de grade flexíveis que se adaptam a diferentes tamanhos de tela.</li>
+                <li><span class="hlt">Media queries</span>: permitem definir estilos diferentes com base no tamanho da tela ou do dispositivo.</li>
+                <li><span class="hlt">Unidades flexíveis</span>: permitem dimensionar elementos com base no tamanho da tela ou do dispositivo.</li>
+                <li><span class="hlt">Grid systems</span>: permitem criar layouts de grade flexíveis que se adaptam a diferentes tamanhos de tela.</li>
             </ul>
         </section>
         <hr class="reveal">
         <section class="section reveal"> 
             <h1><span class="fa fa-hashtag icon"></span>Frameworks CSS</h1>
-            <p>Além das técnicas de responsividade mencionadas anteriormente, existem também os frameworks CSS, que são coleções de estilos pré-definidos e componentes que podem ser usados para criar rapidamente layouts e designs para páginas web. Alguns exemplos de frameworks CSS populares incluem:</p>
+            <p>Além das técnicas de responsividade mencionadas anteriormente, existem também os <span class="hlt">frameworks</span> CSS, que são coleções de estilos pré-definidos e componentes que podem ser usados para criar rapidamente layouts e designs para páginas web. Alguns exemplos de frameworks CSS populares incluem:</p>
             <ul>
-                <li>Bootstrap: um dos frameworks CSS mais populares e amplamente utilizados, criado pelo Twitter. Ele inclui um conjunto de componentes prontos para uso, como botões, formulários e tabelas, bem como estilos pré-definidos para tipografia, cores e espaçamento.</li>
-                <li>Materialize: um framework CSS baseado na linguagem de design Material do Google. Ele inclui componentes como cartões, botões flutuantes e barras de navegação, bem como estilos pré-definidos para cores, tipografia e espaçamento.</li>
-                <li>Foundation: um framework CSS que oferece uma ampla gama de componentes e estilos pré-definidos para criar layouts e designs responsivos.</li>
+                <li><span class="hlt">Bootstrap</span>: um dos frameworks CSS mais populares e amplamente utilizados, criado pelo Twitter. Ele inclui um conjunto de componentes prontos para uso, como botões, formulários e tabelas, bem como estilos pré-definidos para tipografia, cores e espaçamento.</li>
+                <li><span class="hlt">Materialize</span>: um framework CSS baseado na linguagem de design Material do Google. Ele inclui componentes como cartões, botões flutuantes e barras de navegação, bem como estilos pré-definidos para cores, tipografia e espaçamento.</li>
+                <li><span class="hlt">Foundation</span>: um framework CSS que oferece uma ampla gama de componentes e estilos pré-definidos para criar layouts e designs responsivos.</li>
             </ul>
         </section>
         <hr class="reveal">
@@ -117,7 +120,7 @@
             <p>CSS é uma parte fundamental do desenvolvimento web e permite que os desenvolvedores criem estilos personalizados para suas páginas e aplicativos web. Ao entender os conceitos básicos de CSS, as propriedades de estilo, seletores, especificidade e técnicas de responsividade, os desenvolvedores podem criar layouts flexíveis e estilos personalizados para atender às necessidades de seus usuários.</p>
         </section>
     </main>
-    <footer class="cssFooter">
+    <footer class="mainFooter">
         <div class="footerRow">
             <div class="footerInfo">
                 <h1>Instituto Federal do Tocantins</h1>
