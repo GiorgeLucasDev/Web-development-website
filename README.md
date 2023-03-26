@@ -10,6 +10,10 @@ O site inclui os seguintes tópicos:
 - Introdução às linguagens HTML, CSS e JavaScript
 - Recursos para aprendizado e prática
 
+## Como acessar
+
+- Acesse o link: https://nonulldev.github.io/Site-Desenvolvimento-Web/html.html
+
 ## Licença
 
 Este repositório está licenciado sob a MIT License. 
