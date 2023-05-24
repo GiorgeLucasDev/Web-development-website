@@ -12,7 +12,7 @@ O site inclui os seguintes tópicos:
 
 ## Como acessar
 
-- Acesse o link: https://nonulldev.github.io/Site-Desenvolvimento-Web/html.html
+- Acesse o link: https://giorgelucasdev.github.io/Site-Desenvolvimento-Web/html.html
 
 ## Licença
 
