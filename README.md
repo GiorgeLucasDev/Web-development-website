@@ -1,20 +1,30 @@
-# Desenvolvimento Web
+# Web development website
 
-Este repositório contém um site dedicado à disciplina de Desenvolvimento Web, com foco nas linguagens HTML, CSS e JavaScript. O objetivo do site é fornecer recursos e informações úteis para estudantes e profissionais que desejam aprender mais sobre o assunto.
+## Description 📝
 
-## Conteúdo
+This repository contains a website dedicated to the Web Development discipline, focusing on the HTML, CSS, and JavaScript languages. The purpose of the website is to provide resources and useful information for students and professionals who want to learn more about the subject.
 
-O site inclui os seguintes tópicos:
+## Screenshot 📷
 
-- O que é Desenvolvimento Web e por que é importante?
-- Introdução às linguagens HTML, CSS e JavaScript
-- Recursos para aprendizado e prática
+![image](https://github.com/GiorgeLucasDev/Web-development-website/assets/97764442/f3bb3b2a-1f88-4a9f-b067-edb30c4b5770)
 
-## Como acessar
+## How to run the project 🚀
 
-- Acesse o link: https://giorgelucasdev.github.io/Site-Desenvolvimento-Web/html.html
+- Option 1: Clone the repository using Git and open the `index.html` file in your web browser.
+- Option 2: Access the deployed version of the website by clicking on this link: <https://giorgelucasdev.github.io/Web-development-website/index.html>
 
-## Licença
+## Resources used 🔧
 
-Este repositório está licenciado sob a MIT License. 
+- HTML
+- CSS
+- JavaScript
 
+## License 📜
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+## Credits 🙌
+
+This project was created by Giorge Lucas.
+
+Enjoy the project! 😊
